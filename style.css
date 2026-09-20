@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  background-color: #f8fafc;
+  color: #334155;
+  line-height: 1.6;
+  margin: 0;
+  padding: 30px;
+}
+
+h1, h2, h3, h4 {
+  color: #0f172a;
+  margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #0056b3;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ff6600;
+}
+
+.foto-profil {
+  width: 200px; 
+  height: 200px; 
+  border-radius: 50%; 
+  object-fit: cover;
+  display: block;
+  margin: 20px auto; 
+}
+
+img {
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: transform 0.4s ease;
+  margin: 15px;
+  object-fit: cover;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+ul, ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+ul li, ol li {
+  background-color: #3b82f6;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+table {
+  width: 100%;
+  max-width: 800px;
+  border-collapse: collapse;
+  margin: 20px auto;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  animation: slideUp 1s ease-out;
+}
+
+th, td {
+  padding: 15px;
+  border: 1px solid #e2e8f0;
+  text-align: left;
+}
+
+
+
+form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 700px;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  animation: slideUp 1.2s ease-out;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="number"], 
+input[type="date"], 
+select, 
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+input[type="submit"], 
+input[type="reset"] {
+  background-color: #10b981;
+  color: white;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover 
+input[type="reset"]:hover {
+  background-color: #059669;
+  transform: translateY(-3px);
+}
+
+input[type="reset"] {
+  background-color: #ef4444;
+}
+
+input[type="reset"]:hover {
+  background-color: #dc2626;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

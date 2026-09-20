@@ -4,39 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>This is my First Tugas</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Personal Website</h1>
-    <p>Selamat Datang In My Website</p>
-    <a href="Home.html">Home</a> | <a href="About.html">Profil</a> |
-    <a href="Projek.html">Projek</a> |
-    <a href="Prestasi.html">Prestasi</a> |
-    <a href="Kontak.html">Kontak</a>
-    <hr />
-    <h2>Hi Namaku Cece Aditya</h2>
-    <img
-      src="assets/Cece_Formal.jpeg"
-      alt="Foto Profil Cece Aditya"
-      width="200"
-    />
-    <p>Yuk Kita ekplore my website adaa apa aja nyak ?</p>
-    <p>Saya Adalah Mahasiswa PSTI yang Suka Terkait Bidang Web development</p>
-    <p>
-      Di Website ini anda dapat mengenal saya lebih jauh juga bisa bekerja sama
-      jika anda tertarik dengan saya
-    </p>
-    <br />
-    <h3>Yang Sedang Saya Pelajari Adalah :</h3>
-    <ul>
-      <li>HTML</li>
-      <li>Sistem Digital</li>
-      <li>Jaringan Komputer</li>
-    </ul>
-    <p>
-      Silahkan Kunjungi Halaman <a href="About.html">About</a> Untuk Ingfo Lebih
-      Lanjut Ya Guyss.
-    </p>
-    <hr />
-    <p>© 2026 Cece Aditya</p>
+    <div id="wadah-utama">
+      <header class="header-web">
+        <h1>Personal Website</h1>
+        <p>Selamat Datang In My Website</p>
+
+        <nav class="navigasi-menu">
+          <a href="Home.html">Home</a>
+          <a href="About.html">Profil</a>
+          <a href="Projek.html">Projek</a>
+          <a href="Prestasi.html">Prestasi</a>
+          <a href="Kontak.html">Kontak</a>
+        </nav>
+      </header>
+
+      <hr />
+
+      <div class="profil-layout">
+       <img src="assets/Cece_Formal.jpeg" alt="Foto Profil Cece Aditya" class="foto-profil" />
+        <div class="profil-teks">
+          <h2>Hi Namaku Cece Aditya</h2>
+          <p>Yuk Kita ekplore my website adaa apa aja nyak ?</p>
+          <p>
+            Saya Adalah Mahasiswa PSTI yang Suka Terkait Bidang Web development.
+          </p>
+          <p>
+            Di Website ini anda dapat mengenal saya lebih jauh juga bisa bekerja
+            sama jika anda tertarik dengan saya.
+          </p>
+        </div>
+      </div>
+
+      <br />
+
+      <div class="skill-section">
+        <h3>Yang Sedang Saya Pelajari Adalah :</h3>
+        <ul>
+          <li>HTML</li>
+          <li>Sistem Digital</li>
+          <li>Jaringan Komputer</li>
+        </ul>
+      </div>
+
+      <p class="info-lanjut">
+        Silahkan Kunjungi Halaman <a href="About.html">About</a> Untuk Ingfo
+        Lebih Lanjut Ya Guyss.
+      </p>
+
+      <hr />
+      <p class="footer-teks">© 2026 Cece Aditya</p>
+    </div>
   </body>
 </html>
